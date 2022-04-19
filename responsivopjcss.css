@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+html{
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen";
+}
+
+.button{
+    display: inline-block;
+    padding: 1em 2.5em;
+    background: #58c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.button:hover{
+    background: #37a0a0;
+}
+
+.iconplay{
+    height: 5em;
+    display: none;
+}
+.iconplay img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.topheader{
+    text-align: center;
+}
+.maxwidth{
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clearfix:after, .row:after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+.logoheader{
+    margin: .5em;
+}
+.topnav{
+    background: #612674;
+    text-align: center;
+}
+.topnav ul{
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+    text-shadow: 2px 2px 1px #361541;
+    
+}
+.topnav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+.topnav a:hover{
+    background: #7c3792;
+}
+
+.topcontent{
+    padding: 1em;
+    text-align: center;
+    background: #f6f6f6;
+}
+.topcontent-t{
+    color: #612674;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+.topcontent-subt{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.iddlecontent{
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}
+.iddlecontent span[class^="icon"]{
+    font-size: 3.5em;
+    color: #652e79;
+}
+.iddlecontent-t{
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+}
+.iddlecontent p{
+    line-height: 1.5;
+    color: #222;
+}
+
+.maincontent{
+    padding: 2em;
+}
+.maincontent-art{
+    margin-bottom: 3.5em;
+}
+.maincontent p{
+    line-height: 1.2;   
+}
+.maincontent-t{
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: normal;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+.footer{
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.footermenu{
+    background: #303d4c;
+    padding: .5em;
+}
+.footermenu li{
+    display: inline-block;
+    margin: .5em 1em;
+}
+.footermenu a{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+}
+.icon-facebook:hover{
+    color:#4d66aa;
+}
+.icon-twitter:hover{
+    color:#388bb1;
+}
+.icon-google-plus:hover{
+    color:hsl(12, 59%, 54%);
+}
+
+
+
+@media screen and (min-width: 48.75em){
+    
+    .logoheader{
+        float: left;
+    }
+
+    .iconplay{
+        display: block;
+    }
+    .topnav{
+        background: transparent;
+        float: right;
+        margin-top: 1.875em;
+    }
+    .topnav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .topnav li{
+        display: inline-block;
+    }
+    .topnav a{
+        color: #713a84;
+        text-shadow: none;
+        font-weight: bold;
+    }
+    .topnav a:hover{
+        background: #e7d9fc;
+    }
+    
+    .topcontent{
+        background: #521a66;
+    }
+    .topcontent-t{
+        color: white;
+        font-size: 1.5em;
+    }
+    .topcontent-subt{
+        color: white;
+    }
+
+    .col-1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+    .maincontent-art .button{
+        float: right;
+    }
+
+
+}
+
+@media screen and (min-width: 62.5em){
+    .topcontent{
+        background: #521a66 url(../projeto\ responsivo/08.07/images/bg_topo_1198x670.jpg);
+        height: 20em;
+        padding-top: 17em;
+        background-position: center bottom;
+        
+    }
+    .footermenu a{
+        transition: font-size .2s;
+    }
+    .footermenu a:hover{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 74em){
+    .logoheader{
+        padding: 1em;
+        margin-left: 1em;
+    }
+    .topcontent{
+        background-image: url(../projeto\ responsivo/08.07/images/bg_topo_1600x1374.jpg);
+        padding: 19em 18em 10em;
+        background-position: center top;
+    }
+
+    .iconplay{
+        height: 7em;
+    }
+    .maincontent-art .button{
+        float: none;
+    }
+
+    .col-1-4{
+        width: 23%;
+        margin: 1%;
+    }
+
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+
+    
+    
+
+}
